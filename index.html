@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Клавиатурный тренажер</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">Клавиатурный тренажер</h1>
+
+      <div class="level">
+        <h2 class="level__title">Выберите уровень сложности</h2>
+        <form class="level__form form">
+          <div class="level__1">
+            <input
+              class="visually-hidden"
+              type="radio"
+              name="level"
+              id="firstLvl"
+              checked
+            />
+            <label class="level__label" for="firstLvl"> 1 </label>
+          </div>
+
+          <div class="level__2">
+            <input
+              class="visually-hidden"
+              type="radio"
+              name="level"
+              id="secondLvl"
+            />
+            <label class="level__label" for="secondLvl"> 2 </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="speed">
+        <h2 class="speed__title">Выберите уровень скорости</h2>
+        <form class="speed__form form">
+          <div class="speed__1">
+            <input
+              class="visually-hidden"
+              type="radio"
+              name="speed"
+              id="firstSpeed"
+              checked
+            />
+            <label class="speed__label" for="firstSpeed"> 1 </label>
+          </div>
+
+          <div class="speed__2">
+            <input
+              class="visually-hidden"
+              type="radio"
+              name="speed"
+              id="secondSpeed"
+            />
+            <label class="speed__label" for="secondSpeed"> 2 </label>
+          </div>
+        </form>
+      </div>
+
+      <button class="btn-start disabled" type="button">Начать</button>
+
+      <div class="keyboard">
+        <ul class="row row-0">
+          <li class="key pinkie" id="esc">Esc</li>
+          <li class="key pinkie" id="1">1</li>
+          <li class="key ring" id="2">2</li>
+          <li class="key middle" id="3">3</li>
+          <li class="key pointer1" id="4">4</li>
+          <li class="key pointer2" id="5">5</li>
+          <li class="key pointer2" id="6">6</li>
+          <li class="key pointer1" id="7">7</li>
+          <li class="key middle" id="8">8</li>
+          <li class="key ring" id="9">9</li>
+          <li class="key pinkie" id="10">0</li>
+          <li class="key pinkie">-</li>
+          <li class="key pinkie">=</li>
+          <li class="key pinkie" id="Backspace">Back</li>
+        </ul>
+
+        <ul class="row row-1">
+          <li class="key pinkie" id="Tab">Tab</li>
+          <li class="key pinkie" id="Q">Q</li>
+          <li class="key ring" id="W">W</li>
+          <li class="key middle" id="E">E</li>
+          <li class="key pointer1" id="R">R</li>
+          <li class="key pointer2" id="T">T</li>
+          <li class="key pointer2" id="Y">Y</li>
+          <li class="key pointer1" id="U">U</li>
+          <li class="key middle" id="I">I</li>
+          <li class="key ring" id="O">O</li>
+          <li class="key pinkie" id="P">P</li>
+          <li class="key pinkie" >[</li>
+          <li class="key pinkie" >]</li>
+          <li class="key pinkie">\</li>
+        </ul>
+
+        <ul class="row row-2">
+          <li class="key pinkie" id="Caps">Caps</li>
+          <li class="key pinkie" id="A">A</li>
+          <li class="key ring" id="S">S</li>
+          <li class="key middle" id="D">D</li>
+          <li class="key pointer1" id="F">F</li>
+          <li class="key pointer2" id="G">G</li>
+          <li class="key pointer2" id="H">H</li>
+          <li class="key pointer1" id="J">J</li>
+          <li class="key middle" id="K">K</li>
+          <li class="key ring" id="L">L</li>
+          <li class="key pinkie" >;</li>
+          <li class="key pinkie" >"</li>
+          <li class="key pinkie" id="Enter">Enter</li>
+        </ul>
+
+        <ul class="row row-3">
+          <li class="key pinkie" id="leftShift">Shift</li>
+          <li class="key pinkie" id="Z">Z</li>
+          <li class="key ring" id="X">X</li>
+          <li class="key middle" id="C">C</li>
+          <li class="key pointer1" id="V">V</li>
+          <li class="key pointer2" id="B">B</li>
+          <li class="key pointer2" id="N">N</li>
+          <li class="key pointer1" id="M">M</li>
+          <li class="key middle" >,</li>
+          <li class="key ring" >.</li>
+          <li class="key pinkie" >/</li>
+          <li class="key pinkie" id="rightShift">Shift</li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <p class="info__text">
+          Нажимайте клавиши, которые выделены на клавиатуре
+        </p>
+        
+        <p class="info__result">
+          Вы набрали 0 баллов
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
